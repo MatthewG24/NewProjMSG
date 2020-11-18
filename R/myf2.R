@@ -1,6 +1,6 @@
 #' Cube Function
 #'
-#' @param x
+#' @param x component
 #'
 #' @return a vector of cubed components
 #' @export

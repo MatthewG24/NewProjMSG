@@ -1,14 +1,15 @@
 #' mymaxlik
 #'
-#' @param lfun
-#' @param x
-#' @param param
-#' @param ...
+#' @param lfun fun
+#' @param x size
+#' @param param parameter
+#' @param ... additional terms
 #'
-#' @return
+#' @return maximum likelihood
 #' @export
 #'
 #' @examples
+#' mymaxlik(lfun,x,param,...)
 mymaxlik=function(lfun,x,param,...){
   # how many param values are there?
   np=length(param)

@@ -4,14 +4,15 @@
 #' @param x size
 #' @param fun mean
 #' @param alpha alpha
-#' @param cx
-#' @param ...
+#' @param cx width
+#' @param ... additional terms
 #'
-#' @return
+#' @return histogram of bootstrap statistics
 #' @export
 #'
 #' @examples
-myboot2<-function(iter=10000,x,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
+#' myboot2(iter=100,x=10,fun="mean",alpha=0.02,cx=1.5)
+myboot2<-function(iter=10000,x=10,fun="mean",alpha=0.05,cx=1.5,...){  #Notice where the ... is repeated in the code
   n=length(x)   #sample size
 
   y=sample(x,n*iter,replace=TRUE)

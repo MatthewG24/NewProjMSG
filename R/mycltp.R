@@ -3,7 +3,7 @@
 #' @param n sample size
 #' @param iter iterations
 #' @param lambda lambda
-#' @param ...
+#' @param ... additional terms
 #'
 #' @return poisson distribution of a random sample
 #' @export
